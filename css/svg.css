@@ -1,0 +1,149 @@
+/* ////////////////////////////////////////////////////////////////// */
+/* SVG */
+
+/*PAGE SVG*/
+.intro {
+  position: relative;
+  overflow: hidden;
+}
+.intro::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  -webkit-mask: url(/assets/Blob.svg) no-repeat 50% 50%;
+  mask: url(/assets/Blob.svg) no-repeat 50% 50%;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.952) 0%,
+    rgba(199, 199, 199, 0.61) 40.32%,
+    rgba(235, 235, 235, 0.69) 54.1%,
+    rgba(164, 164, 164, 0.65) 61.98%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  width: 20rem;
+  height: 20rem;
+
+  transform: scale(1.6) rotate(-15.5deg);
+  right: -10rem;
+  bottom: 9.2rem;
+}
+
+.information {
+  position: relative;
+  overflow-x: clip;
+}
+.information::before,
+.information::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  -webkit-mask: url(/assets/Blob.svg) no-repeat 50% 50%;
+  mask: url(/assets/Blob.svg) no-repeat 50% 50%;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.952) 0%,
+    rgba(199, 199, 199, 0.61) 40.32%,
+    rgba(235, 235, 235, 0.69) 54.1%,
+    rgba(164, 164, 164, 0.65) 61.98%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  width: 60rem;
+  height: 60rem;
+}
+
+.information::before {
+  transform: scale(1.4) rotate(65.6deg);
+  left: -30.6rem;
+  top: -18.4rem;
+}
+.information::after {
+  transform: scale(1.4) rotate(-59.4deg);
+  right: -23.7rem;
+  top: -30.5rem;
+}
+
+/*IMG SVG*/
+
+.image-box {
+  position: relative;
+}
+.image-box::before,
+.image-box::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+
+  -webkit-mask: url(/assets/Blob.svg) no-repeat 50% 50%;
+  mask: url(/assets/Blob.svg) no-repeat 50% 50%;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  background-image: linear-gradient(155deg, #30ab4c 0%, #111111 100%);
+
+  width: 20rem;
+  height: 20rem;
+}
+/*INTROBOTTLESVG*/
+.intro .image-box::before {
+  transform: scale(1.5) rotate(5.3deg);
+  left: 3.5rem;
+  bottom: 13.7rem;
+}
+.intro .image-box::after {
+  transform: scale(1.7) rotate(17.1deg);
+  right: -0.7rem;
+  bottom: 26.2rem;
+}
+
+/*INFOrmationIMGSSVG*/
+.information .image-box::before,
+.information .image-box::after {
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.952) 0%,
+    rgba(199, 199, 199, 0.61) 40.32%,
+    rgba(235, 235, 235, 0.69) 54.1%,
+    rgba(164, 164, 164, 0.65) 61.98%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+.information .image-box::before {
+  left: -11.2rem;
+  bottom: 1.1rem;
+}
+.information .image-box::after {
+  transform: scale(0.9) rotate(19.1deg);
+  right: -11.4rem;
+  bottom: 6rem;
+}
+/*DETAILSBOTTLESVG*/
+.details__bottle .image-box::before,
+.details__bottle .image-box::after {
+  z-index: 1;
+}
+.details__bottle .image-box::before {
+  transform: scale(2.3) rotate(23.1deg);
+  left: 2rem;
+  bottom: 41.8rem;
+}
+.details__bottle .image-box::after {
+  transform: scale(1.9) rotate(23.1deg);
+  right: -3.6rem;
+  top: 45.1rem;
+}
+
+/*DETAILSDOGSVG*/
+/* .details__dog::before,
+.details__dog::after {
+  z-index: 1;
+}
+.details__dog::before {
+  transform: scale(2.3) rotate(346deg);
+  left: 61.4rem;
+  bottom: 1.5rem;
+}
+.details__dog::after {
+  transform: scale(2.3) rotate(23.1deg);
+  right: 52.2rem;
+  bottom: 7.1rem;
+} */
